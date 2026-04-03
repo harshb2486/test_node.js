@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harshb2486/test_node.js.git"
@@ -13,9 +10,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
   "bugs": {
     "url": "https://github.com/harshb2486/test_node.js/issues"
   },
-  "homepage": "https://github.com/harshb2486/test_node.js#readme"
+  "homepage": "https://github.com/harshb2486/test_node.js#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
